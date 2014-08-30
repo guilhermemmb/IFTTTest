@@ -1,0 +1,12 @@
+{
+  "name": "experiment-webdriverio",
+  "description": "experiement with webdriverio and selenium",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "chai": "^1.9.1",
+    "selenium-standalone": "^2.42.2-2.9.0-1",
+    "webdriverio": "^2.1.2"
+  },
+  "devDependencies": {}
+}
