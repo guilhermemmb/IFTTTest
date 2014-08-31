@@ -1,9 +1,14 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
+  h1 Test Without Code
 
-	input(type='text',id='inputText', value='12391283912893128')
-	input(id='btn',type='button', value='clickme')
-	input(id='textBox',type='text')
+  p Obrigado por se interessar pelo Test Without Code.
+  div
+    p Estamos em processo de desenvolvimento
+    div(class='sendEmailDiv')
+      p Coloque seu email para saber novidades do produto
+      input(type='text',id='email')
+      input(type='button', id='btn',value='enviar')
+    div(class='emailSentDiv hide')
+      p enviado!
