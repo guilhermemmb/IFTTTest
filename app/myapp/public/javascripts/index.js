@@ -9,6 +9,7 @@ function ready() {
     var inputText = document.querySelector("#email").value = "";
 
 	btn.onclick = function() {
+        var that = this;
 		var inputText = document.querySelector("#email");
 
 		var text = inputText.value;
@@ -21,20 +22,14 @@ function ready() {
                     email: text
                 }
             }).done(function(res) {
-                eventGA.track('email');
-
+                gaEvents.track.call(that,'click');
+            }).done(function(res) {
                 $(".sendEmailDiv").addClass("hide");
                 $(".emailSentDiv").removeClass("hide");
             });
         }
 	}
 }
-
-var eventGA = {
-    track: function(tag) {
-
-    }
-};
 
 window.addEventListener("load",ready,false);
 window.onload = ready;
